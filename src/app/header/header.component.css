@@ -1,6 +1,14 @@
 .nav-items{
-  padding-right: 40px;
+  padding-block: 1em;
+  padding-right: 60px;
+  font-size: large;
+  list-style: none;
+  font-family: sans;
+  color: black;
 }
-a{
-  color:black;
+.navbar-brand{
+  font-size: xx-large;
+  color: blue;
+  font-family: serif;
 }
+

@@ -1,17 +1,17 @@
 <div class="row">
     <button class="addres"><a routerLink="/recipeedit">SUGGEST A NEW RECIPE</a></button>
-    <button class="addres"><a routerLink="/dinnervegetarian">VEGETARIAN</a></button>
-    <button class="addres"><a routerLink="/dinnernonvegetarian">NON-VEGETARIAN</a></button>
     <button class="on" (click)="onfilter()">Search</button>
     <input class="fill" [(ngModel)]='food'>
 </div>
 <hr>
+<h1 style="text-align: center; color: brown; text-decoration: underline; padding: 2%;">VEGETARIAN FOOD</h1>
+<hr style="display: none;">
 <div class="row">
     <div class="column">
-        <div *ngFor="let recipe of recipelist| filter:Seraches:'name'">
+        <div *ngFor="let recipe of recipelist|filter:Seraches:'name'">
             <button class="reselect" (click)="onselect(recipe)">
                 <img [src]="recipe.imagepath" class="image" alt="{{recipe.name}}">
-                <h1>{{recipe.name|uppercase}}</h1>
+                <h1>{{recipe.name | uppercase}}</h1>
                 <p>{{recipe.description}}</p>
             </button>
         </div>
@@ -19,13 +19,15 @@
     <div class="column" *ngIf="selectedrecipe">
         <div class="selected">
             <img [src]="selectedrecipe.imagepath" class="img">
-            <h2>{{selectedrecipe.name| uppercase}}</h2>
+            <h2>{{selectedrecipe.name}}</h2>
             <h4>{{selectedrecipe.description}}</h4>
+            <h4>INGREDIENTS</h4>
             <p class="ing">{{selectedrecipe.ingredient}}</p>
-            <button class="btn btn-primary" (click)="display()">Full Instruction
-            </button>
+            <button class="btn btn-primary" (click)="display()">Full Instruction</button>
             <div *ngIf="next">
                 <div *ngIf="displayinfo">
+                    <hr>
+                    <p style="font-size: large;">{{selectedrecipe.maincompo}}</p>
                     <p style="font-size: large;">{{selectedrecipe.instruction}}</p>
                     <p style="font-size: large;">{{selectedrecipe.step1}}</p>
                     <p style="font-size: large;">{{selectedrecipe.step2}}</p>

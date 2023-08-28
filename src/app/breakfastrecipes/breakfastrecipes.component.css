@@ -35,13 +35,17 @@
 .ing{
   text-transform: capitalize;
 }
-.on {
-    border-radius: 50%;
-    background-color: lightblue;
-    font-size: larger;
-    padding: 5px;
-    margin-left: 7%;
-    color: white;
-    border: 5px;
-    text-decoration: none;
+.fill{
+    margin: 3px;
+    width: 17%;
+    margin-bottom: 9px;
+}
+.on{ border-radius: 50%;
+background-color: lightblue;
+font-size: larger;
+padding: 5px;
+margin-left: 7%;
+color: white;
+border: 5px;
+text-decoration: none;
 }

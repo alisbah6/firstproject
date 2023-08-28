@@ -1,0 +1,60 @@
+html{
+  margin : 0 ;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.hero{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+h1{
+  text-align: center;
+  font-size: 6em;
+  padding: 2em;
+  height: 590px;
+  color:#fff;
+}
+.select{
+  margin-top: 25px;
+  display: flex;
+  margin-left: 5px;
+  margin-bottom:20px ;
+}
+img{
+  padding: 3px;
+}
+.items{
+  display: flex;
+  margin-left: 5px;
+  margin-bottom:20px ;
+}
+.se{
+  margin-left: 14px;
+  padding-left: 45px;
+  font-size: x-large;
+}
+.sel{
+  margin-left: 120px;
+  padding-left: 70px;
+  font-size: x-large;
+}
+.about{
+
+    font-size: 70px;
+    text-decoration: underline;
+}
+.abtmsg{
+    font-size: 20px;
+    margin-left: 30px;
+    padding-left: 30px;
+    margin-bottom: 8px; 
+}
+.leftmsg{
+    font-size: 12px;
+    text-align: right;
+    margin-bottom: 5px;
+}

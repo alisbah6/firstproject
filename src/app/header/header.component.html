@@ -1,23 +1,15 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a href="#" class="navbar-brand" >Recipe Book</a>
+            <a class="navbar-brand" routerLink="/home" style="color: blue;" >Indian Recipe Book</a>
         </div>
         <div class="navbar-expand">
           <ul class="navbar-nav">
-            <li class="nav-items"><a href="#" (click)="onSelect('recipe')">Recipe</a></li>
-            <li class="nav-items"><a href="#"(click)="onSelect('shopping-list')">Shopping List</a></li>
-          </ul>
-        </div>
-        <div>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown" appDropdown>
-              <a class="dropdown-toggle" role="button">Manage</a></li>
-            <ul class="dropdown-menu">
-              <li><a>Save Data</a></li>
-              <li><a>Fetch Data</a></li>
-            </ul>
-          </ul>
+            <li class="nav-items" routerLinkActive="active"><a routerLink="/home" style="color: black;">Home</a></li>
+            <li class="nav-items" routerLinkActive="active"><a routerLink="/breakfastrecipe" style="color: black;">Breakfast</a></li>
+            <li class="nav-items" routerLinkActive="active"><a routerLink="/lunchrecipe" style="color: black;">Lunch</a></li>
+            <li class="nav-items" routerLinkActive="active"><a routerLink="/dinner" style="color: black;">Dinner</a></li>
+            <li class="nav-items" routerLinkActive="active"><a routerLink="/desserts" style="color: black;">Desserts</a></li>          </ul>
         </div>
     </div>
 </nav>
